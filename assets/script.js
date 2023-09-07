@@ -51,7 +51,6 @@ function goToExperiment(index) {
 
   iframe.srcdoc = bodyElement.innerHTML;
   p5container.appendChild(iframe);
-  iframe.style.zIndex = "-100";
 
   nameText.innerText = experiment.name;
   descriptionText.innerText = experiment.description;
