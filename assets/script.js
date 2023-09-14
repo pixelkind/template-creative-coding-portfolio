@@ -38,6 +38,12 @@ function goToExperiment(index) {
   p5script.defer = true;
   bodyElement.appendChild(p5script);
 
+  const toneScript = document.createElement("script");
+  toneScript.type = "text/javascript";
+  toneScript.src = "http://unpkg.com/tone";
+  toneScript.defer = true;
+  bodyElement.appendChild(toneScript);
+
   const codeScript = document.createElement("script");
   codeScript.type = "text/javascript";
   codeScript.src = experiment.file;
