@@ -40,7 +40,7 @@ function goToExperiment(index) {
 
   const toneScript = document.createElement("script");
   toneScript.type = "text/javascript";
-  toneScript.src = "http://unpkg.com/tone";
+  toneScript.src = "https://unpkg.com/tone";
   toneScript.defer = true;
   bodyElement.appendChild(toneScript);
 
@@ -60,8 +60,6 @@ function goToExperiment(index) {
 
   nameText.innerText = experiment.name;
   descriptionText.innerText = experiment.description;
-  backgroundText.innerText = experiment.background;
-  githubLink.href = experiment.github;
 }
 
 nextButton.addEventListener("click", () => {
